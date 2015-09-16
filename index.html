@@ -33,6 +33,22 @@ iframe { width:100% ;
   margin-left: auto;
 }
 </style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        if (/iPhone|iPod|iPad/.test(navigator.userAgent))
+            $('iframe').wrap(function(){
+                var $this = $(this);
+                return $('<div />').css({
+                    width: $this.attr('width'),
+                    height: $this.attr('height'),
+                    overflow: 'scroll',
+                    '-webkit-overflow-scrolling': 'touch'
+                });
+            });
+    })
+    </script>
+
 </head>
 <body class="container-fluid">
 
