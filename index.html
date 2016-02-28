@@ -21,16 +21,26 @@ video#bgvid {
 </style>
 
 </head>
+<body>
+<div id="body">
+TEST
+<script>
+var applaunchCount = window.localStorage.getItem('launchCount');
 
+//Check if it already exists or not
+if(applaunchCount){
+   var element = document.getElementById("body");
+   element.innerHTML = "<div><h1>This is the second time you launched uCovenant</h1></div>";
 
-<!--           -->
-<h1>TEST PAGE</h1>
-<form action="home.html">
-    <input type="submit" value="uCovenant">
-</form>
-<video autoplay loop poster="polina.jpg" id="bgvid">
-    <source src="test.webm" type="video/webm">
-    <source src="test.mp4" type="video/mp4">
-</video>
+}else{
+  //Local storage is not set, hence first time launch. set the local storage item
+  window.localStorage.setItem('launchCount',1);
+
+    var element = document.getElementById("body");
+   element.innerHTML = "<div><h1>This is the first time you launched uCovenant</h1></div>";
+}
+</script>
+</div>
+</body>
 
 </html>

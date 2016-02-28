@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="test.css">
+<style>
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+</style>
+
+</head>
+
+
+<!--           -->
+<h1>TEST PAGE</h1>
+<form action="home.html">
+    <input type="submit" value="uCovenant">
+</form>
+<video autoplay loop poster="polina.jpg" id="bgvid">
+    <source src="test.webm" type="video/webm">
+    <source src="test.mp4" type="video/mp4">
+</video>
+
+</html>
