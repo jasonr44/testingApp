@@ -18,6 +18,14 @@ video#bgvid {
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
 }
+
+.tutorial { 
+  background: url(images/page1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 </style>
 
 </head>
@@ -35,7 +43,7 @@ document.location.href="http://ucovenant.info";
   
 
     var element = document.getElementById("body");
-   element.innerHTML = "<div><h1 style='text-align:center;'>This is the first time you launched uCovenant</h1></div><a href='intro2.html'><img src='images/rightArrow.png' style='height: 25px; width: 25px; margin-left:50%' /></a>";
+   element.innerHTML = "<div class='tutorial'>t</div><a href='intro2.html'><img src='images/rightArrow.png' style='height: 25px; width: 25px; margin-left:50%' /></a>";
 }
 </script>
 </div>
