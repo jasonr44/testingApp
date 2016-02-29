@@ -22,15 +22,14 @@ video#bgvid {
 
 </head>
 <body>
-<div id="body">
+<div id="body" target="_parent">
 TEST
 <script>
 var applaunchCount = window.localStorage.getItem('launchCount');
 
 //Check if it already exists or not
 if(applaunchCount){
-   var element = document.getElementById("body");
-   element.innerHTML = "<div><h1>This is the second time you launched uCovenant</h1></div>";
+document.location.href="http://ucovenant.info";
 
 }else{
   //Local storage is not set, hence first time launch. set the local storage item
