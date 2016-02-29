@@ -30,14 +30,14 @@ var applaunchCount = window.localStorage.getItem('launchCount');
 //Check if it already exists or not
 if(applaunchCount){
    var element = document.getElementById("body");
-   element.innerHTML = "<div><h1 style='text-align:center;'>This is the second time you launched uCovenant</h1></div><a href='intro2.html'><img src='images/rightArrow.png' style='height: 25px; width: 25px; margin-left:50%' /></a>";
+   element.innerHTML = "<div><h1>This is the second time you launched uCovenant</h1></div>";
 
 }else{
   //Local storage is not set, hence first time launch. set the local storage item
   window.localStorage.setItem('launchCount',1);
 
     var element = document.getElementById("body");
-   element.innerHTML = "<div><h1>This is the first time you launched uCovenant</h1></div>";
+   element.innerHTML = "<div><h1 style='text-align:center;'>This is the first time you launched uCovenant</h1></div><a href='intro2.html'><img src='images/rightArrow.png' style='height: 25px; width: 25px; margin-left:50%' /></a>";
 }
 </script>
 </div>
