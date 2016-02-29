@@ -2,9 +2,13 @@
 <body>
 <div><h1 style='text-align:center;'>Page2</h1>
 </div>
-<a href="index.html"><img src='images/leftArrow.png' style='height: 25px; width: 25px; margin-left:25%;' /></a> 
+<a href="index.html"><img src='images/leftArrow.png' style='height: 25px; width: 25px; margin-left:25%;' onclick="resetLaunchCount()" /></a> 
 <a href="intro3.html"><img src='images/rightArrow.png' style='height: 25px; width: 25px; float:right; margin-right:25%;' /></a>
 
 </body>
-
+<script>
+function resetLaunchCount() {
+window.localStorage.setItem('launchCount',0);
+}
+</script>
 </html>
