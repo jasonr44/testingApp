@@ -1,7 +1,12 @@
 <html>
 <head>
-<link rel="stylesheet" href="test.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link href='fonts/ShadowsIntoLight.ttf' rel='stylesheet' type='text/css'>
 <style>
+@font-face {
+font-family: shadowsintolight;
+src: url(fonts/shadowsintolight.ttf);
+}
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
     margin: 0;
@@ -13,86 +18,73 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
     background: transparent;
 }
 
-video#bgvid { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover; 
-}
-
-.tutorial { 
-  background: url(images/page1.png) no-repeat center center fixed; 
+html { 
+  background: url(images/discussionThread.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 1000px;
-  margin: 0px;
+ background-size: 100% 100%;
+
 }
 
-.invisibleButton {
 
-    background: transparent;
-    border: none !important; 
-    font-size:0;
-	min-height: 100px;
-	min-width: 100px;
-	position: fixed;
-	bottom: 0px; 
-	right: 0px;
-	
+.introFont{
+
+font-family:shadowsintolight;
+font-size: 420%;
+text-align: center;
+color: white;
+
 }
 
-.textBox {
-background-color:white;
-position:fixed;
-    top: 50%;
-    left: 50%;
-    width:60%;
-    height:auto;
-    margin-top: -9px; /*set to a negative number 1/2 of your height*/
-    margin-left: -40%; /*set to a negative number 1/2 of your width*/
-    border: 1px solid #ccc;
-	padding:15px;
-	border-radius: 10%;
-	-webkit-box-shadow: 0px -1px 18px -2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -1px 18px -2px rgba(0,0,0,0.75);
-box-shadow: 0px -1px 18px -2px rgba(0,0,0,0.75);
-font-family: Helvetica;
 
+.uRed{
+color:#820028;
+}
+
+.uPurple{
+color:#800080;
+}
+
+.middle {
+margin: 0 auto;
+}
+
+a.noUnderline {
+text-decoration: none;
+}
+
+.getStartedButton {
+border-style: solid;
+border-width: 10px;
+border-color: white;
+background-color: #800080;
+color:white;
+margin-top:5%;
+margin-left: 10%;
+margin-right: 10%;
+font-weight: bold;
 }
 
 </style>
 
 </head>
-<body>
-<div id="body" target="_parent">
-<script>
-var applaunchCount = window.localStorage.getItem('launchCount');
-
-//Check if it already exists or not
-if(applaunchCount){
-document.location.href="http://ucovenant.info";
-
-}else{
-  //Local storage is not set, hence first time launch. set the local storage item
-  
-
-    var element = document.getElementById("body");
-   element.innerHTML = "<div class='tutorial'><div class='textBox'>First thing's first. Let's get registered, shall we?</div><a href='intro2.html'><button class='invisibleButton'></button></a></div>";
-}
-</script>
+<body class="bigText">
+<img class="img-responsive middle" height="450px" width="450px" src="images/uCovenantLogoWhite.png" />
+<div class="introFont container">
+<strong>Welcome to U&middot;Covenant - a contemporary Christian ministry built </strong>
+<br><i>By You, For God.</i>
+<br><strong>Join members across the globe in discussions and services centered around the issues that matter to you.</strong>
 </div>
+
+<div class="container">
+<a class="noUnderline" href="discussionThread.html">
+<div class="getStartedButton introFont">Get started</div>
+</a>
+</div>	
+
+
 </body>
 
 </html>
