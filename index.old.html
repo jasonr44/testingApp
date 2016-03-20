@@ -70,21 +70,22 @@ font-weight: bold;
 </style>
 
 </head>
-<body class="bigText">
-<img class="img-responsive middle" height="450px" width="450px" src="images/uCovenantLogoWhite.png" />
-<div class="introFont container">
-<strong>Welcome to U&middot;Covenant - a contemporary Christian ministry built </strong>
-<br><i>By You, For God.</i>
-<br><strong>Join members across the globe in discussions and services centered around the issues that matter to you.</strong>
-</div>
+<body id="body" class="bigText" target="_parent">
+<script>
+var applaunchCount = window.localStorage.getItem('launchCount');
 
-<div class="container">
-<a class="noUnderline" href="discussionThread.html">
-<div class="getStartedButton introFont">Get started</div>
-</a>
-</div>	
+//Check if it already exists or not
+if(applaunchCount){
+document.location.href="http://ucovenant.info";
 
+}else{
+  //Local storage is not set, hence first time launch. set the local storage item
+  
 
+    var element = document.getElementById("body");
+   element.innerHTML = "<img class='img-responsive middle' height='450px' width='450px' src='images/uCovenantLogoWhite.png' /><div class='introFont container'><strong>Welcome to U&middot;Covenant - a contemporary Christian ministry built </strong><br><i>By You, For God.</i><br><strong>Join members across the globe in discussions and services centered around the issues that matter to you.</strong></div><div class='container'><a class='noUnderline' href='discussionThread.html'><div class='getStartedButton introFont'>Get started</div></a></div>";
+}
+</script>
 </body>
 
 </html>
