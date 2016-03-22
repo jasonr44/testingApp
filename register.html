@@ -43,16 +43,32 @@ html {
 
 	<div>
 		
-			<a href="http://uCovenant.info/register/" class="signUpButton btn-block">Sign-Up</a>
+			<button onclick="registerCookie()" class="signUpButton btn-block">Sign-Up</button>
 		
-		<a href="http://uCovenant.info" class="btn-block skipButton">Skip Sign-Up</a>
+		<button onclick="skipCookie()" class="btn-block skipButton">Skip Sign-Up</button>
 	</div>
 	</div>
 </div>	
 <div class="col-xs-12 bottomFill"><!-- Meant to fill rest of space --></div>
 <div class="row">
 <a href="updates.html"><img class="arrowLeft" src="images/leftArrow.png" /></a>
-<a href="http://www.ucovenant.info/register/"><img class="arrowRight" src="images/rightArrow.png" /></a>
+
+<button onclick="registerCookie()"><img class="arrowRight" src="images/rightArrow.png" /></button>
+
+
+<script>
+function registerCookie() {
+ window.localStorage.setItem('launchCount',1);
+window.location.href='http://www.ucovenant.info/register/';
+
+}
+function skipCookie() {
+window.localStorage.setItem('launchCount',1);
+window.location.href='http://uCovenant.info';
+
+}
+
+</script>
 </div>	
 	
 
