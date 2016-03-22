@@ -1,13 +1,16 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="main">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
 <link href='fonts/ShadowsIntoLight.ttf' rel='stylesheet' type='text/css'>
 <style>
 @font-face {
 font-family: shadowsintolight;
 src: url(fonts/shadowsintolight.ttf);
 }
+
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -16,42 +19,6 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-}
-
-body, html { 
-    
-   width:100% ;
-    height:100% ;
-    overflow:hidden ;
- ---other existing attributes---
- overflow-y: scroll;	
-}
-.scroll-wrapper {
-	-webkit-overflow-scrolling: touch;
-  	overflow-y: scroll;
-  	width:100% ;
-        height:100% ;
-        border:none ;
-	margin: 0px 0px 0px 0px;
-	
-	/* important:  dimensions or positioning here! */
-}
-.scroll-wrapper iframe {
-	/* nada! */
-}
-iframe {
-	width:100% ;
-        height:100% ;
-        border:none ;
-	margin: 0px 0px 0px 0px;	
-}
-.container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 html { 
@@ -63,78 +30,6 @@ html {
  background-size: 100% 100%;
  min-width:100%;
 
-}
-
-.bigText{
-font-family:shadowsintolight;
-font-size: 150%;
-
-}
-
-.centerPic {
-margin: 0 auto;
-
-margin-bottom: 5px;
-}
-.whiteRowBack {
-background-color:white;
-
- overflow: hidden;
-
-}
-
-.blueRowBack {
-background-color:#0078a2;
-
-    bottom: 0;
-    left: 0;
-    right: 0;
-	position:relative;
-	color: white;
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-top: 7%;
-	
-
-
-}
-
-.shadow {
-margin-bottom: -13px;
-height: 15px;
-
-	-webkit-box-shadow: 0px -4px 15px -2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -4px 15px -2px rgba(0,0,0,0.75);
-box-shadow: 0px -4px 15px -2px rgba(0,0,0,0.75);
-position:relative;
-}
-
-.arrowLeft{
- position:fixed;
-    left:0;
-    bottom:60%;
-    margin:0 0 0 5%;
-    padding:0;
-    width:10%;
-}
-
-.arrowRight{
-  position:fixed;
-    right:0;
-    bottom:60%;
-    margin:0 5% 0 0;
-    padding:0;
-    width:10%;	
-}
-
-.signButtons {
-margin-left:10%;
-margin-right:10%;
-}
-
-.bottomFill {
-min-height:50%;
-margin-top: 0px;
 
 }
 
@@ -143,11 +38,12 @@ margin-top: 0px;
 </head>
 <body class="bigText">
 <div class="container-fluid row">
-	<img style="margin-top:10%; margin-bottom: -40%; overflow:hidden;" class="img-responsive centerPic" src="images/discussionFormPhoneFramed.png" width="200" height="400" />
-	<div class="row blueRowBack container-fluid bottomFill" style="font-size: 200%; margin-bottom: 0px;">
+	<div class="col-xs-8 col-xs-offset-2"><img class="img-responsive centerPic phone" src="images/discussionFormPhoneFramed.png" /></div>
+	<div class="col-xs-12 blueRowBack container-fluid">
 	<strong>Browse Topics</strong>
 	<br>Pop-tops (popular topics) will be pushed to the front for activity. </div>
 </div>
+<div class="col-xs-12 bottomFill"><!-- Meant to fill rest of space --></div>
 <div class="row">
 <a href="index.html"><img class="arrowLeft" src="images/leftArrow.png" /></a>
 <a href="votingForm.html"><img class="arrowRight" src="images/rightArrow.png"  /></a>
