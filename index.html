@@ -1,47 +1,24 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" title="main">
-<link rel="stylesheet" type="text/css" href="css/custom.css">
-<link href='fonts/ShadowsIntoLight.ttf' rel='stylesheet' type='text/css' />
-<style>
-@font-face {
-font-family: shadowsintolight;
-src: url(fonts/shadowsintolight.ttf);
-}
-
-
-html { 
-  background: url(images/discussionThread.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- background-size: 100% 100%;
-
-}
-
-
-</style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSON and AJAX</title>
+    <link rel="stylesheet" href="css/jason.css">
 </head>
-<body id="body" target="_parent">
-<script>
-var applaunchCount = window.localStorage.getItem('launchCount');
 
-//Check if it already exists or not
-if(applaunchCount){
-document.location.href="http://ucovenant.info";
- //This is a second time launch, and count = applaunchCount
-}else{
-  //Local storage is not set, hence first time launch. set the local storage item
+<body>
 
 
-    var element = document.getElementById("body");
-   element.innerHTML = "<div class='scroll-wrapper'><div class='col-xs-12'><img class='img-responsive col-xs-6 col-xs-offset-3' src='images/uCovenantLogoWhite.png' /></div><div class=' col-xs-12 introFont container'><strong>Welcome to U&middot;Covenant - a contemporary Christian ministry built </strong><br><i>By You, For God.</i><br><strong>Join members across the globe in discussions and services centered around the issues that matter to you.</strong></div><div class='container col-xs-12'><a class='noUnderline' href='discussionThread.html'><div class='getStartedButton introFont'>Get started</div></a></div></div>";
-}
-</script>
+    <header>
+        <h1>JSON and AJAX</h1>
+        <button id="btn">Fetch Info for 3 New Animals</button>
+    </header>
+
+    <div id="animal-info"></div>
+
+    <script src="js/rest.js"></script>
+
 </body>
 
 </html>

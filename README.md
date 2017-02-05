@@ -1,2 +1,0 @@
-# testingApp
-#Nothing here yet.
