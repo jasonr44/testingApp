@@ -1,5 +1,5 @@
 
-var animalContainer = document.getElementById("animal-info");
+var commentsContainer = document.getElementById("comments");
 var btn = document.getElementById("btn");
 
 btn.addEventListener("click", function () {
@@ -24,8 +24,12 @@ btn.addEventListener("click", function () {
 
 function renderHTML (data) {
     var htmlString = "";
-    htmlString += data[0];
-    animalContainer.insertAdjacentHTML('beforeend', htmlString);
+     for (i = 0; i < data.length; i++) {
+         htmlString += '<h1>' + data[i].author_name + ' says:<h1></br>';
+         htmlString += '<p>' + data[i].content.rendered + '</p>';
+     }
+    
+    commentsContainer.insertAdjacentHTML('beforeend', htmlString);
 }
 
 
