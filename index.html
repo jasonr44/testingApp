@@ -3,19 +3,38 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>JSON and AJAX</title>
+    <title>Pop-Top</title>
     <link rel="stylesheet" href="css/jason.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bbpress.min.css">
 </head>
 
 <body>
 
-
+<div class="container mainBody">
     <header>
-        <h1>JSON and AJAX</h1>
-        <button id="btn">Fetch Info for 3 New Animals</button>
+        <h1>Pop-Top</h1>
+        <button id="btn">Refresh Comments</button>
     </header>
+<div id="commentsContainer" class="container">
+</div>
 
-    <div id="comments"></div>
+<script id="commentsTemplate" type="text/x-handlebars-template">
+
+    {{#each .}}
+    <div class="commentRows container">
+        <div class="bbp-reply-content reply type-reply even">
+            <div class="col-xs-3">{{author_name}}</div>
+            <div class="col-xs-9">{{{content.rendered}}}</div>
+        </div>
+    </div>
+    {{/each}}
+
+</script>
+</div>
+    <script src="js/handlebars.js"></script>
 
     <script src="js/rest.js"></script>
 

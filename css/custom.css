@@ -1,0 +1,388 @@
+.customPageTitle {
+	color: purple;
+	
+}
+
+/* Custom JasonRansom */
+body {
+    background: #eee;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+*, *:before, *:after{ 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+} 
+.refreshButton{
+width:40px; 
+height:40px;
+z-index: 5; 
+position: absolute;
+}
+.aboveFooter {
+margin-top: -60px;
+margin-bottom: 60px;
+margin-left: 7%;
+}
+
+ .navbar-custom {
+background-color: #0078a2;
+
+}
+
+.navbar-default .navbar-nav>li>a {
+color: white !important;
+}
+
+.navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+   
+    background-color: #820028 !important;
+}
+
+img.noResize {
+  min-height: 50px;
+  min-width: 50px;
+}
+
+#searchFormCustom input {
+margin-right: 0px;
+
+}
+
+#searchFormCustom button {
+margin-left: 0px;
+}
+
+.searchFull {
+width: 100%;
+}
+
+.noSideMargins {
+margin-left: 0px;
+margin-right: 0px;
+}
+
+.noSidePadding {
+padding-left: 0px;
+padding-right: 0px;
+}
+
+.searchBarContainer {
+padding-left: 15px;
+padding-right: 15px;
+margin-top: 10px;
+}
+
+.specialSearch {
+
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+
+}
+
+.specialSearchButton {
+
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+
+}
+
+img.noResize2 {
+  min-height: 30px;
+  min-width: 30px;
+}
+
+.avatar {
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+}
+
+.wp-polls-ul li .pollbar{ 
+border-radius: 3px;
+
+}
+
+
+
+.newTopicButton {
+background-color:rgb(244,246,248); 
+-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+padding: 3% !important;  
+}
+
+.newTopicButtonDiv {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.custom-bbp-links{
+margin-top: 7px;
+
+}
+
+.avatarBackground {
+border-radius: 50%;
+}
+
+/*iphone 6 */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {  
+
+.iphoneBar {
+min-height: 20px;
+background-color: white;
+
+}
+
+}
+
+/* iphone 6+  */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+
+.iphoneBar {
+min-height: 20px;
+background-color: white;
+
+}
+
+}
+
+
+/* iphone 5 and 5s */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+
+
+.iphoneBar {
+min-height: 20px;
+background-color: white;
+
+}
+ }
+
+/* iphone 2-4s */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) { 
+
+
+.iphoneBar {
+min-height: 20px;
+background-color: white;
+
+}
+
+ }
+
+/*Custom JasonRansom */
+@media screen and (max-width: 600px) {
+ #bbpress-forums div.bbp-forum-content,
+#bbpress-forums div.bbp-topic-content,
+#bbpress-forums div.bbp-reply-content {
+
+	margin-left: 10px; /* was 130px */
+	margin-right: 10px;
+	padding: 12px 12px 12px 0;
+	text-align: left;
+	
+}
+	
+	
+  #bbpress-forums div.bbp-forum-content,
+#bbpress-forums div.bbp-topic-content,
+#bbpress-forums div.bbp-reply-content{
+	margin-top:80px; /* new */
+	margin-left: 10px; /* was 130px */
+	margin-right: 10px;
+	padding: 12px 12px 12px 0;
+	
+	
+	
+}
+
+
+#bbpress-forums p {
+	margin-top: 10px;
+}
+}
+
+div.bbp-reply-content > p {
+	font-size: 120% !important;
+	
+}
+
+#wdform_4_element1 textarea element.style {
+     width: 50% !important;
+     height: 100px !important;
+}
+
+#bbp_reply_content {
+border-color: rgb(201,201,201);
+
+}
+
+.formCommentBox{
+          width: 100% !important;
+          /* was 100% */
+          margin: 0px !important;
+          min-width: none;
+}
+
+@media only screen and (max-width: 415px)  {
+     .formCommentBox{
+          width: 90% !important;
+          /* was 100% */
+          margin: 0px !important;
+     }
+}
+
+@media only screen and (max-width: 385px)  {
+     .formCommentBox{
+          width: 80% !important;
+          /* was 100% */
+          margin: 0px !important;
+     }
+}
+
+@media only screen and (max-width: 352px)  {
+     .formCommentBox{
+          width: 70% !important;
+          /* was 100% */
+          margin: 0px !important;
+     }
+}
+@media only screen and (max-width: 320px)  {
+     .formCommentBox{
+          width: 60% !important;
+          /* was 100% */
+          margin: 0px !important;
+     }
+}
+
+.form-allowed-tags{
+display:none;
+}
+
+#ppBody
+{
+    font-size:11pt;
+    width:100%;
+    margin:0 auto;
+    text-align:justify;
+}
+
+#ppHeader
+{
+    font-family:verdana;
+    font-size:21pt;
+    width:100%;
+    margin:0 auto;
+}
+
+.ppConsistencies
+{
+    display:none;
+}
+
+/* bbpress Customization */
+/* Hiding items */
+#bbpress-forums .bbp-template-notice, .bbp-author-role, .bbp-reply-ip, a.bbp-reply-permalink {
+   display:none; 
+}
+
+#bbpress-forums ul.bbp-replies {
+    border: white;
+}
+
+#bbpress-forums li.bbp-header, #bbpress-forums li.bbp-footer {
+    background: white;
+    border-top: white;
+}
+
+li.bbp-header, li.bbp-footer {
+    color: white;
+}
+
+#subscription-toggle {
+    color:black !important;
+}
+
+li > div.topic {
+    border-radius: 25px;
+    border: 2px solid #EEEEEE;
+}
+
+li > div.topic p {
+    font-weight: bold;
+    font-size: large;
+    }
+
+li > div.topic, li > div.reply {
+    border-radius: 25px;
+    border: 2px solid #EEEEEE;
+}
+
+#bbpress-forums div.bbp-reply-header {
+    background-color: white;
+    border-top: white;
+}
+
+/*Custom JasonRansom */
+@media screen and (max-width: 600px) {
+    a.bbp-author-name { 
+     overflow: visible !important;
+    }
+
+    img.avatar {
+        position: relative !important;
+        margin-bottom: 20px !important;
+    }
+
+   div.bbp-reply-content {
+       margin-top: -2px !important;
+   } 
+}
+
+li.bbp-topic-voice-count, li.bbp-topic-reply-count {
+    visibility: hidden;
+}
+
+.blackText {
+    color: black;
+    display: visible;
+}
+
+.commentRows {
+    border-radius: 25px;
+    border: 2px solid #EEEEEE;
+    padding-top: 10px;
+    max-width: 90%;
+}
+
+.mainBody {
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-left: 10%;
+    box-shadow: 0px 2px 5px 0px rgba(173,173,173,1);
+    overflow: hidden;
+    display: inline-block;
+    width: 80%;
+        -webkit-box-sizing: border-box;
+}
+
+/*End Custom Jason Ransom */
+
